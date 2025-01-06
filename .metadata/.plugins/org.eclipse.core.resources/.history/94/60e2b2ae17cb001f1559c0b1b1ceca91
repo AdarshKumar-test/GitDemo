@@ -1,0 +1,17 @@
+package rahulshettyacademy.pageObjectModel;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import rahulshettyacademy.AbstractComponents.AbstractComponents;
+
+public class checkOutPage extends AbstractComponents{
+	
+	WebDriver driver;
+
+	public checkOutPage(WebDriver driver) {
+		super(driver);
+		PageFactory.initElements(driver, this);
+	}
+
+}
